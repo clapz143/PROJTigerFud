@@ -16,6 +16,7 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         firebaseDatabase = FirebaseDatabase.getInstance()
@@ -23,17 +24,17 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
-    private fun loginUser(username: String, password: String){
-        databaseReference.orderByChild("username").equalTo(username).addListenerForSingleValueEvent(object : ValueEventListener{
-            override fun onDataChange(dataSnapshot: DataSnapshot) {
-                if (dataSnapshot.exists()){
-                    for (userSnapshot in dataSnapshot.children){
-                        val userData = userSnapshot
-
-                    }
-
-                }
-            }
-        })
-    }
+//    private fun loginUser(username: String, password: String){
+//        databaseReference.orderByChild("username").equalTo(username).addListenerForSingleValueEvent(object: ValueEventListener{
+//            override fun onDataChange(dataSnapshot: DataSnapshot) {
+//                if (dataSnapshot.exists()){
+//                    for (userSnapshot in dataSnapshot.children){
+//                        val userData = userSnapshot = userSnapshot.getValue(UserData::class.java)
+//
+//                    }
+//
+//                }
+//            }
+//        })
+//    }
 }
