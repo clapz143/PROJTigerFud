@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "720788094515",
+    "project_id": "projtigerfud",
+    "storage_bucket": "projtigerfud.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720788094515:android:275feab182806122e2ed46",
+        "android_client_info": {
+          "package_name": "com.example.projtigerfud"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaZQ1gswpCBs7I--vx5MLiRj8eLhevxT4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
