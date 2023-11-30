@@ -82,14 +82,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/loginRedirect"
+                android:id="@+id/signupRedirect"
                 android:text="Not yet registered? Signup"
                 android:textSize="18sp"
                 android:gravity="center"
                 android:textColor="@color/mustard"
                 android:layout_marginTop="70dp"
-                app:layout_constrainStart_toStartOf="Parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/LoginButton"/>
 
 

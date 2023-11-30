@@ -89,9 +89,10 @@
                 android:gravity="center"
                 android:textColor="@color/mustard"
                 android:layout_marginTop="70dp"
-                app:layout_constrainStart_toStartOf="Parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/signupButton"/>
+<!--                app:layout_constrainStart_toStartOf="Parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+
 
 
 
