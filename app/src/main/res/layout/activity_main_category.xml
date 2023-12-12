@@ -13,6 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:layout_marginTop="16dp"
+        android:textColor="@color/brown"
+        app:fontFamily="@font/bezier"
         android:text="Categories"
         android:textSize="30sp"
         app:layout_constraintTop_toTopOf="parent"
@@ -28,4 +30,38 @@
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="107dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="33dp"
+        android:backgroundTint="@color/brown"
+        android:gravity="center"
+        android:onClick="backBtnClick"
+        android:textSize="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text0"
+        android:layout_width="65dp"
+        android:layout_height="131dp"
+        android:layout_marginBottom="4dp"
+        android:text="⬅ "
+        android:textColor="@color/white"
+        android:textSize="80dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/bezier"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        app:layout_constraintVertical_bias="0.998"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

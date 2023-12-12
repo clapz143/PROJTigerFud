@@ -7,19 +7,52 @@
     android:layout_height="match_parent"
     tools:context=".BruncheeDetailActivity">
 
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="55dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="18dp"
+        android:backgroundTint="@color/brown"
+        android:gravity="center"
+        android:textSize="100dp"
+        android:onClick="backBtnClick"
+        app:layout_constraintBottom_toTopOf="@+id/imageResto"
+        app:layout_constraintEnd_toStartOf="@+id/textTitle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text0"
+        android:layout_width="49dp"
+        android:layout_height="78dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="11dp"
+        android:text="⬅ "
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/bezier"
+        app:layout_constraintBottom_toTopOf="@+id/imageResto"
+        app:layout_constraintEnd_toStartOf="@+id/textTitle"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
     <TextView
         android:id="@+id/textTitle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_width="291dp"
+        android:layout_height="48dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:textColor="@color/brown"
-        app:fontFamily="@font/bezier"
+        android:layout_marginEnd="32dp"
         android:text="Brunchee"
+        android:textColor="@color/brown"
         android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        app:fontFamily="@font/bezier"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

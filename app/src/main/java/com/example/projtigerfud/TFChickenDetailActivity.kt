@@ -1,7 +1,9 @@
 package com.example.projtigerfud
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 
 class TFChickenDetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -9,5 +11,9 @@ class TFChickenDetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_tfchicken_detail)
 
 
+    }
+    fun backBtnClick (view: View){
+        val intent= Intent(this, ChickenActivity::class.java)
+        startActivity(intent)
     }
 }

@@ -3,6 +3,7 @@ package com.example.projtigerfud
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -46,6 +47,10 @@ class CoffeeActivity : AppCompatActivity() {
             val intent = Intent(this, selectedImage.activityClass)
             startActivity(intent)
 
+        }
+        fun backBtnClick (view: View){
+            val intent= Intent(this, MainCategory::class.java)
+            startActivity(intent)
         }
     }
 }

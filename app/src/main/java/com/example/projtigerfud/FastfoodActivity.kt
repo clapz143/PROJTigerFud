@@ -3,6 +3,7 @@ package com.example.projtigerfud
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -38,6 +39,11 @@ class FastfoodActivity : AppCompatActivity() {
             ),
         )
 
+        fun backBtnClick (view: View){
+            val intent= Intent(this, MainCategory::class.java)
+            startActivity(intent)
+        }
+
         val recyclerView = findViewById<RecyclerView>(R.id._imageRecyclerView3)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = ImageAdapter(this, imageList) { selectedImage ->
@@ -45,5 +51,6 @@ class FastfoodActivity : AppCompatActivity() {
             val intent = Intent(this, selectedImage.activityClass)
             startActivity(intent)
     }
+
 }
 }
