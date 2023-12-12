@@ -13,6 +13,33 @@
         android:theme="@style/Theme.PROJTigerFud"
         tools:targetApi="31">
         <activity
+            android:name=".TapaKingDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chowkingDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".McdoDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BonchonDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ArmynavyDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BokDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TigerwinxDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RaysDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BruncheeDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".CoffeeActivity"
             android:exported="false" />
         <activity
@@ -29,9 +56,7 @@
             android:exported="false" />
         <activity
             android:name=".MainCategory"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".LoginActivity"
             android:exported="false" />

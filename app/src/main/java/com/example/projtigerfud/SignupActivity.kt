@@ -17,6 +17,7 @@ class SignupActivity : AppCompatActivity() {
     private lateinit var firebaseDatabase: FirebaseDatabase
     private lateinit var databaseReference: DatabaseReference
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         // these lines help initialize and set up the user interface for the SignupPage activity using View Binding.
         super.onCreate(savedInstanceState)
@@ -27,14 +28,12 @@ class SignupActivity : AppCompatActivity() {
         databaseReference = firebaseDatabase.reference.child("users") //users means data base so whenever u want to access ur database u have to mention path string as users
 
         binding.signupButton.setOnClickListener {
-            // username and password that user will write the details we will take them with the help of text.toString
+        // username and password that user will write the details we will take them with the help of text.toString
             val signupUsername = binding.signupUsername.text.toString()
             val signupPassword = binding.signupPassword.text.toString()
 
             // pag dalawa is not empty ang username and password, i call this signup user method which created before sa loob neto it will pass signupUsername, signupPassword
             if(signupUsername.isNotEmpty() && signupPassword.isNotEmpty()){
-                Toast.makeText(this@SignupActivity, "proceed to login", Toast.LENGTH_SHORT).show()
-
                 signUpUser(signupUsername, signupPassword)
             }else { // pag yung user black lang nilagay it will toast as all fields are mandatory
                 Toast.makeText(this@SignupActivity, "All Fields are mandatory", Toast.LENGTH_SHORT).show()
@@ -47,7 +46,6 @@ class SignupActivity : AppCompatActivity() {
             startActivity(Intent(this@SignupActivity, LoginActivity::class.java))
             finish()
         }
-
     }
 
     private fun signUpUser(username: String, password: String){
@@ -70,7 +68,6 @@ class SignupActivity : AppCompatActivity() {
                 }else {
                     Toast.makeText(this@SignupActivity, "User already exists", Toast.LENGTH_SHORT).show()
                 }
-
             }
 
             override fun onCancelled(databaseError: DatabaseError) {

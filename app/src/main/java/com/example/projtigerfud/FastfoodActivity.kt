@@ -18,23 +18,23 @@ class FastfoodActivity : AppCompatActivity() {
         val imageList = listOf<Image>(
             Image(
                 R.drawable.armynavyff,
-                TFChickenDetailActivity::class.java
+                ArmynavyDetailActivity::class.java
             ),
             Image(
                 R.drawable.bonff,
-                ChickenActivity::class.java
+                BonchonDetailActivity::class.java
             ),
             Image(
                 R.drawable.mcdoff,
-                ChickenActivity::class.java
+                McdoDetailActivity::class.java
             ),
             Image(
                 R.drawable.chowkingff,
-                ChickenActivity::class.java
+                chowkingDetailActivity::class.java
             ),
             Image(
                 R.drawable.tapakingff,
-                ChickenActivity::class.java
+                TapaKingDetailActivity::class.java
             ),
         )
 

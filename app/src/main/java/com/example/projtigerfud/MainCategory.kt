@@ -23,11 +23,10 @@ class MainCategory : AppCompatActivity() {
         Image(
             R.drawable.catfastfood, FastfoodActivity::class.java),
         Image(
-            R.drawable.catasian,AsianActivity::class.java
+            R.drawable.catasian, AsianActivity::class.java
         ),
         Image(
-            R.drawable.catcoffee,
-            CoffeeActivity::class.java
+            R.drawable.catcoffee, CoffeeActivity::class.java
         ),
     )
             val recyclerView = findViewById<RecyclerView>(R.id._imageRecyclerView)

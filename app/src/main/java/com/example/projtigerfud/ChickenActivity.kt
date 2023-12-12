@@ -23,19 +23,20 @@ class ChickenActivity : AppCompatActivity() {
             ),
             Image(
                 R.drawable.brunchee,
-                ChickenActivity::class.java
+                BruncheeDetailActivity::class.java
             ),
+
             Image(
                 R.drawable.raychix,
-                ChickenActivity::class.java
+                RaysDetailActivity::class.java
             ),
             Image(
                 R.drawable.tigerwinx,
-                ChickenActivity::class.java
+                TigerwinxDetailActivity::class.java
             ),
             Image(
                 R.drawable.bokchix,
-                ChickenActivity::class.java
+                BokDetailActivity::class.java
             ),
         )
 
