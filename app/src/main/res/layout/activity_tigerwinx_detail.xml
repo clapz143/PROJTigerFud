@@ -27,7 +27,7 @@
         android:layout_width="0dp"
         android:layout_height="222dp"
         android:layout_marginTop="16dp"
-        android:src="@drawable/raysplace"
+        android:src="@drawable/tigerwinxplace"
         app:layout_constraintTop_toBottomOf="@+id/textTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
