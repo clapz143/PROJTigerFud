@@ -43,9 +43,10 @@ class MainCategory : AppCompatActivity() {
 //        val intent = Intent(this, ChickenActivity::class.java)
 //        startActivity(intent)
     }
-            fun backBtnClick (view: View){
-                val intent= Intent(this, MainActivity::class.java)
-                startActivity(intent)
-            }
+
+    }
+    fun backBtnClick (view: View){
+        val intent= Intent(this, MainActivity::class.java)
+        startActivity(intent)
     }
 }
